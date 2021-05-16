@@ -1,3 +1,8 @@
+/* * {
+  box-sizing: border-box; 
+  mala practica hack de modelo de caja
+}*/
+
 @font-face {
   font-family: charter;
   src: url("../esencial-html-y-css/fonts/charter-regular.otf");
@@ -68,6 +73,10 @@ h1 {
   margin-top: 64px;
   margin-bottom: 16px;
   /*margin: 64px 10px 16px 20px;*/
+  border: 10px solid red;
+  width: 400px;
+  height: 400px;
+  padding: 40px;
 }
 
 /*h1 + p {
@@ -90,6 +99,10 @@ h3 {
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid red;
+  box-sizing: border-box;
 }
 
 pre {
@@ -118,6 +131,18 @@ blockquote span {
 blockquote span::before {
   content: "-";
 }
+/*.form {
+  font-size: 0;
+}*/
+/*input {
+  padding: 10px 20px;
+  /margin: 20px;
+  /display: block
+  /width: 500px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid red;
+} */
 
 .hero {
   background-image: linear-gradient(
