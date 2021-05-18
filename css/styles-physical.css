@@ -53,6 +53,26 @@ header {
   /*--gray10: red;*/
   font-size: 14px;
   color: var(--gray10);
+  position: absolute;
+  /* position: relative; */
+  border: 1px solid red;
+  right: 0;
+  /* bottom: 0; */
+  /* top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; */
+  /* ventana de modal */
+  /* margin: 50px; */
+  /* top left bottom right z-index */
+  /* top: 200px; */
+  /* left: 30px;
+  right: 50px;
+  bottom: 100px; */
+  background: red;
+  /* z-index: -1; */
+  /* position: fixed; */
+  /* position: sticky; */
 }
 
 header a {
@@ -163,7 +183,7 @@ blockquote span::before {
   padding: 20px;
 }
 
-.title {
+/* .title {
   background: red;
 }
 
@@ -173,7 +193,7 @@ blockquote span::before {
 
 .pricing {
   background: blue;
-}
+} */
 /* .debug {
   box-shadow: inset 0 0 0 1px red;
   outline: 1px solid red;
@@ -187,6 +207,7 @@ blockquote span::before {
   margin: 100px;
   border: 5px solid blue;
 } */
+
 .hero {
   background-image: linear-gradient(
       to top,
@@ -202,6 +223,7 @@ blockquote span::before {
 
 .section-content {
   margin-top: 164px;
+  position: relative;
 }
 
 .section-content:first-of-type {
