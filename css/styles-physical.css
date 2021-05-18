@@ -53,10 +53,11 @@ header {
   /*--gray10: red;*/
   font-size: 14px;
   color: var(--gray10);
-  position: absolute;
+  /* position: sticky; */
   /* position: relative; */
   border: 1px solid red;
-  right: 0;
+  top: 0;
+  left: 0;
   /* bottom: 0; */
   /* top: 0;
   bottom: 0;
@@ -70,7 +71,7 @@ header {
   right: 50px;
   bottom: 100px; */
   background: red;
-  /* z-index: -1; */
+  z-index: 1;
   /* position: fixed; */
   /* position: sticky; */
 }
@@ -122,6 +123,9 @@ h3 {
   /* padding: 20px; */
   /* border: 1px solid red; */
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 pre {
@@ -255,7 +259,7 @@ blockquote span::before {
 .section-content h3 {
   counter-increment: titleList;
   /*background: red;*/
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -264,10 +268,13 @@ blockquote span::before {
 
 .section-content h3::after {
   content: "";
-  width: 32px;
+  width: 80px;
   height: 4px;
   background: var(--gray30);
   display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* ::selection{
