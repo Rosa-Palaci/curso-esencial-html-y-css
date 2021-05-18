@@ -128,6 +128,8 @@ p {
 .section-content img {
   margin-block-start: 40px;
   display: block;
+  /* max-width: ; */
+  max-inline-size: 100%;
 }
 .section-content {
   counter-reset: titleList;
@@ -162,4 +164,25 @@ blockquote {
 
 .main hr {
   display: none;
+}
+
+.main {
+  /* border: 2px solid red; */
+}
+
+.wrapper {
+  /* border: 2px solid yellow; */
+  /* width: ; */
+  /* tamaño en linea */
+  /* max-width: ; */
+  max-inline-size: 902px;
+  /* block-size: 100px; */
+  /* overflow: auto; */
+  margin: auto;
+  /* tamano en bloque vertical */
+  /* block-size: ; */
+}
+
+.main-content {
+  /* border: 2px solid blue; */
 }
