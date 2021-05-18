@@ -38,6 +38,13 @@ body {
   color: var(--white30);
   font-family: "Nunito", sans-serif;
   background: #251f24;
+  margin: 0;
+  /* writing-mode: vertical-lr; */
+  /* margin: 10px 10px 10px 10px; */
+  /* margin-inline: 100px; */
+  /* margin-block-start: 50px; */
+  /* margin-inline-end: 50px; */
+  /* margin-block: 100px; */
   /*font-family: Roboto;*/
 }
 
@@ -67,24 +74,34 @@ nav details summary {
   font-weight: bold;
 }
 
-h1,
+/* h1,
 h2,
 h3 {
   font-weight: normal;
-}
+} */
 
 h1 {
   font-size: 60px;
+  margin-block-start: 64px;
+  margin-inline-end: 16px;
   /* text-align: end; */
   /*font-size:3.7em;*/
 }
 
 h2 {
   font-size: 2em;
+  margin-block: 40px;
 }
 
 h3 {
   font-size: 1.5em;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+hr {
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
 }
 
 pre {
@@ -108,7 +125,10 @@ p {
   /*background-size: cover;*/
   height: 350px;
 }
-
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+}
 .section-content {
   counter-reset: titleList;
 }
@@ -118,7 +138,7 @@ p {
 }
 
 .section-content h3::before {
-  content: counter(titleList, decimal);
+  content: counter(titleList, decimal) ". ";
 }
 
 .section-content h3::after {
@@ -129,6 +149,17 @@ p {
   display: inline-block;
 }
 
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background: var(--white10);
+  border-radius: 8px;
+}
+
 /* ::selection{
     background: Green;
 }*/
+
+.main hr {
+  display: none;
+}
